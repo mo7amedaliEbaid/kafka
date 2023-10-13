@@ -38,7 +38,7 @@ class Book {
       authors: authors ?? this.authors,
       title: title ?? this.title,
       description: description ?? this.description,
-      imageLinks: imageLinks ?? this.imageLinks,
+      imageLinks: imageLinks ?? this.imageLinks ,
       publishedDate: publishedDate ?? this.publishedDate,
     );
   }
@@ -48,7 +48,7 @@ class Book {
       authors: model.authors ?? authors,
       title: model.title ?? title,
       description: model.description ?? description,
-      imageLinks: model.imageLinks ?? imageLinks,
+      imageLinks: model.imageLinks ,
       publishedDate: model.publishedDate ?? publishedDate,
     );
   }
@@ -64,11 +64,19 @@ class Book {
   }
 
   factory Book.fromMap(Map<String, dynamic> map) {
-    return Book(
+    return map['imageLinks']==null?
+    Book(
       authors: map['authors'][0],
       title: map['title'],
       description: map['description'],
-      imageLinks: map['imageLinks']["thumbnail"],
+      imageLinks:"https://media.newyorker.com/photos/63b5c3eafa0ce5e2843c3416/master/w_2560%2Cc_limit/230116_r41714.jpg",
+      publishedDate: map['publishedDate'],
+    ):
+      Book(
+      authors: map['authors'][0],
+      title: map['title'],
+      description: map['description'],
+      imageLinks: map['imageLinks']["thumbnail"]?? "https://media.newyorker.com/photos/63b5c3eafa0ce5e2843c3416/master/w_2560%2Cc_limit/230116_r41714.jpg",
       publishedDate: map['publishedDate'],
     );
   }

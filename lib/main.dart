@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:kafka/manager/cubit.dart';
 import 'package:kafka/models/book_model.dart';
+import 'package:kafka/responsive/responsive.dart';
 import 'package:kafka/screens/dashboard/dashboard.dart';
 import 'package:kafka/screens/splash/splash.dart';
 
@@ -58,7 +57,7 @@ class MaterialChild extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: theme.themeLight,
       darkTheme: theme.themeDark,
-      initialRoute: '/splash',
+      initialRoute: Responsive.isDesktop(context) ? '/dashboard' : '/splash',
       routes: {
         '/splash': (context) => const SplashScreen(),
         '/dashboard': (context) => const DashboardScreen(),

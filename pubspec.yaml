@@ -30,31 +30,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-
   cupertino_icons: ^1.0.2
   bloc:
   flutter_bloc:
   equatable:
-
-
   dio:
-
   hive:
   hive_flutter:
-
-
-  intl:
-  url_launcher:
   shimmer:
   cached_network_image:
-  auto_size_text:
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-
   flutter_lints: ^2.0.0
   hive_generator:
   build_runner:

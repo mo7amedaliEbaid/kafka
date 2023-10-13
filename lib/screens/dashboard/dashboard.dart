@@ -4,20 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:kafka/manager/cubit.dart';
-import 'package:kafka/screens/book_details/book_detail.dart';
+import 'package:kafka/screens/book_details/book_details.dart';
 import 'package:shimmer/shimmer.dart';
 import '../../../../configs/app.dart';
-import '../../../../configs/app_dimensions.dart';
-import '../../../../configs/app_theme.dart';
-import '../../../../configs/space.dart';
-import '../../configs/app_typography.dart';
+import '../../../../configs/configs.dart';
 import '../../models/book_model.dart';
-import '../../responsive/responsive.dart';
 
 
-part 'views/mobile.dart';
-part 'views/desktop.dart';
-part 'views/tablet.dart';
+part 'views/widgets/_body.dart';
+
 
 part 'views/widgets/_shimmer_book_card.dart';
 part 'views/widgets/_book_card.dart';
@@ -45,10 +40,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Responsive(
-      mobile: DashboardMobile(),
-      tablet: DashboardTablet(),
-      desktop: DashboardDesktop(),
-    );
+    return  DashboardBody();
   }
 }

@@ -1,15 +1,10 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/material.dart';
-import 'package:kafka/models/book_model.dart';
 
-import '../../configs/app.dart';
-import '../../configs/app_typography.dart';
-import '../../configs/space.dart';
+part of '../book_details.dart';
 
-class BookDetailScreen extends StatelessWidget {
+class TabletBookDetailScreen extends StatelessWidget {
   final Book book;
 
-  const BookDetailScreen({
+  const TabletBookDetailScreen({
     Key? key,
     required this.book,
   }) : super(key: key);
@@ -34,29 +29,29 @@ class BookDetailScreen extends StatelessWidget {
                 Space.y!,
                 Text(
                   book.title ?? "",
-                  style: AppText.h1b,
+                  style: AppText.h2b,
                 ),
                 Space.y!,
-                book.imageLinks == null
-                    ? Center(child: Text("No Details Available"))
-                    : CachedNetworkImage(
-                        imageUrl: book.imageLinks!,
-                        errorWidget: (context, url, error) => Icon(
-                              Icons.error,
-                              size: 50,
-                            ),
-                        placeholder: (context, string) {
-                          return Icon(
-                            Icons.change_circle_sharp,
-                            size: 50,
-                          );
-                        }),
+                CachedNetworkImage(
+                    fit: BoxFit.fitHeight,
+                    height: AppDimensions.normalize(100),
+                    imageUrl: book.imageLinks!,
+                    errorWidget: (context, url, error) => Icon(
+                      Icons.error,
+                      size: 50,
+                    ),
+                    placeholder: (context, string) {
+                      return Icon(
+                        Icons.change_circle_sharp,
+                        size: 50,
+                      );
+                    }),
                 Space.y1!,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      book.authors ?? "",
+                      book.publishedDate ?? "",
                       style: AppText.b2b,
                     ),
                   ],
@@ -64,6 +59,7 @@ class BookDetailScreen extends StatelessWidget {
                 Space.y1!,
                 Text(
                   book.description ?? "",
+                  style: AppText.b2b,
                 )
               ],
             )),

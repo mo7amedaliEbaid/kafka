@@ -1,7 +1,7 @@
-part of '../dashboard.dart';
+part of '../../dashboard.dart';
 
-class DashboardMobile extends StatelessWidget {
-  const DashboardMobile({Key? key}) : super(key: key);
+class DashboardBody extends StatelessWidget {
+  const DashboardBody({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class DashboardMobile extends StatelessWidget {
                                 onTap: () {
                                   Navigator.of(context).push(MaterialPageRoute(
                                       builder: (context) =>
-                                          BookDetailScreen(book: book)));
+                                          BookDetails(book: book)));
                                 },
                                 child: BookCard(
                                   book: book,

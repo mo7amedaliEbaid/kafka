@@ -10,7 +10,7 @@ class BooksDataProvider {
   static Future<List<Book>> fetch(String keyword) async {
     try {
       final response = await dio.get(
-        'https://www.googleapis.com/books/v1/volumes?q=inauthor:"Franz+Kafka"',
+        'https://www.googleapis.com/books/v1/volumes?q=inauthor:"Franz+Kafka"&maxResults=40',
       );
 
       Map raw = response.data;
