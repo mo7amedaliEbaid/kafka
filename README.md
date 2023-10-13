@@ -1,16 +1,32 @@
 # kafka
 
-A new Flutter project.
+A flutter project for the novels of [Franz_Kafka](https://en.wikipedia.org/wiki/Franz_Kafka)
 
-## Getting Started
+- Multi Platform (Mobile, Tablet Web)
+- Responsive Design
+- Clean Architecture
+- Cubit State Management
+- Home Screen
+- Details Screen
 
-This project is a starting point for a Flutter application.
+## Screenshots.
 
-A few resources to get you started if this is your first Flutter project:
+creating model.g.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<p float="left">
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/ea5da6fb6dae56d5dacc7426560e299090955cd2/screenshots/g-model.png" width="670" />
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+mobile 
+
+<p float="left">
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/ea5da6fb6dae56d5dacc7426560e299090955cd2/screenshots/home.jpg" width="170" />
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/ea5da6fb6dae56d5dacc7426560e299090955cd2/screenshots/details.jpg" width="170" />
+</p>
+
+web
+
+<p float="left">
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/ea5da6fb6dae56d5dacc7426560e299090955cd2/screenshots/home-web.png" width="670" />
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/ea5da6fb6dae56d5dacc7426560e299090955cd2/screenshots/details-web.png" width="170" />
+</p>
