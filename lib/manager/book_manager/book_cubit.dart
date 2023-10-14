@@ -7,12 +7,12 @@ import 'package:equatable/equatable.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../models/book_model.dart';
+import '../../models/book_model.dart';
 
 
 part 'data_provider.dart';
 part 'repository.dart';
-part 'state.dart';
+part 'book_state.dart';
 
 class BooksCubit extends Cubit<BooksState> {
   static BooksCubit cubit(BuildContext context, [bool listen = false]) =>

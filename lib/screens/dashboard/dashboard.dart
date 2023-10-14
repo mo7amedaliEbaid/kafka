@@ -3,11 +3,13 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kafka/manager/cubit.dart';
+import 'package:kafka/manager/book_manager/book_cubit.dart';
 import 'package:kafka/screens/book_details/book_details.dart';
+import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 import '../../../../configs/app.dart';
 import '../../../../configs/configs.dart';
+import '../../manager/theme_manager/theme_provider.dart';
 import '../../models/book_model.dart';
 
 

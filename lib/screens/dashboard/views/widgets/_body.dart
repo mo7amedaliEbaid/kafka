@@ -6,6 +6,7 @@ class DashboardBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     App.init(context);
+    final themeProvider = Provider.of<ThemeProvider>(context);
 
     Future<bool> _onWillPop() async {
       return (await showDialog<bool>(
@@ -46,6 +47,43 @@ class DashboardBody extends StatelessWidget {
       child: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
         child: Scaffold(
+          appBar: AppBar(
+            title: Padding(
+              padding: Space.h2!,
+              child: Text(
+                "KAFKA",
+                style: AppText.h2b,
+              ),
+            ),
+            actions: [
+              Row(
+                children: [
+                  Container(
+                      color: Colors.grey,
+                      padding: Space.all(.3,.2),
+                      child: Text("Books")),
+
+                  Container(
+                      color: Colors.amber.shade900,
+                      padding: Space.all(.3,.2),
+                      child: Text("Quotes")),
+                ],
+              ),
+              Space.x!,
+              GestureDetector(
+                onTap: () {
+                  themeProvider.theme = !themeProvider.theme;
+                },
+                child: Icon(
+                  Icons.brightness_6_outlined,
+                  size: AppDimensions.normalize(14),
+                  color: themeProvider.isDark ? Colors.yellow : Colors.grey,
+                ),
+              ),
+              Space.x2!
+            ],
+            automaticallyImplyLeading: false,
+          ),
           body: SafeArea(
             child: BlocBuilder<BooksCubit, BooksState>(
               builder: (context, state) {

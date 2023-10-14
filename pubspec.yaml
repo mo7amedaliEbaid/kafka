@@ -39,6 +39,7 @@ dependencies:
   hive_flutter:
   shimmer:
   cached_network_image:
+  provider:
 
 
 dev_dependencies:

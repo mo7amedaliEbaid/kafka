@@ -1,4 +1,4 @@
-part of 'cubit.dart';
+part of 'book_cubit.dart';
 
 class BooksDataProvider {
   static final dio = Dio();

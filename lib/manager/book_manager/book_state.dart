@@ -1,4 +1,4 @@
-part of 'cubit.dart';
+part of 'book_cubit.dart';
 
 @immutable
 class BooksState extends Equatable {
