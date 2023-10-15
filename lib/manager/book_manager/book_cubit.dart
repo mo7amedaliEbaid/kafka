@@ -7,11 +7,12 @@ import 'package:equatable/equatable.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../models/book_model.dart';
-
+import '../../models/book/book_model.dart';
 
 part 'data_provider.dart';
+
 part 'repository.dart';
+
 part 'book_state.dart';
 
 class BooksCubit extends Cubit<BooksState> {
@@ -22,22 +23,20 @@ class BooksCubit extends Cubit<BooksState> {
 
   final repo = BooksRepository();
 
-  Future<void> fetch({String? keyword}) async {
+  Future<void> fetch() async {
     emit(const BooksFetchLoading());
     try {
-      keyword ??= 'latest';
-
       Duration? difference;
       final currentTime = DateTime.now();
       List<Book>? data = [];
 
-      data = await repo.fetchHive(keyword);
+      data = await repo.fetchHive();
       DateTime? booksTime = Hive.box('app').get('booksTime');
       if (booksTime != null) {
         difference = currentTime.difference(booksTime);
       }
       if (data == null || (difference != null && difference.inHours > 1)) {
-        data = await repo.fetchApi(keyword);
+        data = await repo.fetchApi();
       }
 
       emit(BooksFetchSuccess(data: data));

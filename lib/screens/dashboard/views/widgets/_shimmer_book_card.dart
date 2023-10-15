@@ -16,7 +16,7 @@ class _ShimmerBookCard extends StatelessWidget {
         baseColor: AppTheme.c!.background!,
         child: Container(
           height: AppDimensions.normalize(65),
-          width: double.infinity,
+          width: AppDimensions.normalize(65),
           margin: Space.all(0, 0.35),
           decoration: BoxDecoration(
             color: Colors.white,

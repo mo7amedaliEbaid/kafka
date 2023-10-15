@@ -4,7 +4,7 @@ import 'package:kafka/responsive/responsive.dart';
 
 import '../../configs/app.dart';
 import '../../configs/configs.dart';
-import '../../models/book_model.dart';
+import '../../models/book/book_model.dart';
 
 part 'views/_book_detail_mobile.dart';
 part 'views/_book_detail_desktop.dart';

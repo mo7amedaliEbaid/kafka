@@ -81,10 +81,7 @@ class Book {
     );
   }
 
-  String toJson() => json.encode(toMap());
 
-  factory Book.fromJson(String source) =>
-      Book.fromMap(json.decode(source));
 
   @override
   String toString() {

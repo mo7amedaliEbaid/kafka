@@ -4,13 +4,16 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:hive_flutter/adapters.dart';
 import 'package:kafka/manager/book_manager/book_cubit.dart';
-import 'package:kafka/models/book_model.dart';
+import 'package:kafka/manager/quote_manager/quote_cubit.dart';
+import 'package:kafka/models/book/book_model.dart';
+import 'package:kafka/models/quote/quote_model.dart';
 import 'package:kafka/responsive/responsive.dart';
 import 'package:kafka/screens/dashboard/dashboard.dart';
 import 'package:kafka/screens/splash/splash.dart';
 
 import 'package:provider/provider.dart';
 import 'configs/core_theme.dart' as theme;
+import 'manager/tab_manager/tab_provider.dart';
 import 'manager/theme_manager/theme_provider.dart';
 
 void main() async {
@@ -19,9 +22,11 @@ void main() async {
   await Hive.initFlutter();
 
   Hive.registerAdapter<Book>(BookAdapter());
+  Hive.registerAdapter<Quote>(QuoteAdapter());
 
   await Hive.openBox('app');
   await Hive.openBox('booksbox');
+  await Hive.openBox('quotesbox');
 
   runApp(const MyApp());
 }
@@ -39,7 +44,9 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
         providers: [
           BlocProvider(create: (_) => BooksCubit()),
+          BlocProvider(create: (_) => QuotesCubit()),
           ChangeNotifierProvider(create: (_) => ThemeProvider()),
+          ChangeNotifierProvider(create: (_) => TabProvider()),
         ],
         child: Consumer<ThemeProvider>(
           builder: (context, themeProvider, child) => MaterialChild(

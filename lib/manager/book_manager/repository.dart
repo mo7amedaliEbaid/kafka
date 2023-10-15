@@ -1,9 +1,9 @@
 part of 'book_cubit.dart';
 
 class BooksRepository {
-  Future<List<Book>> fetchApi(String keyword) =>
-      BooksDataProvider.fetch(keyword);
+  Future<List<Book>> fetchApi() =>
+      BooksDataProvider.fetch();
 
-  Future<List<Book>?> fetchHive(String keyword) =>
-      BooksDataProvider.fetchHive(keyword);
+  Future<List<Book>?> fetchHive() =>
+      BooksDataProvider.fetchHive();
 }

@@ -1,10 +1,10 @@
 
 part of '../../dashboard.dart';
 
-class BookCard extends StatelessWidget {
+class _BookCard extends StatelessWidget {
   final Book book;
 
-  const BookCard({
+  const _BookCard({
     Key? key,
     required this.book,
   }) : super(key: key);

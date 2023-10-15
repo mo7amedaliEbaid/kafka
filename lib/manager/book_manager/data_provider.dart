@@ -7,7 +7,7 @@ class BooksDataProvider {
   static final cache = Hive.box('booksbox');
   static final appCache = Hive.box('app');
 
-  static Future<List<Book>> fetch(String keyword) async {
+  static Future<List<Book>> fetch() async {
     try {
       final response = await dio.get(
         'https://www.googleapis.com/books/v1/volumes?q=inauthor:"Franz+Kafka"&maxResults=40',
@@ -42,7 +42,7 @@ class BooksDataProvider {
       log("logging books..................");
       log(books.toString());
 
-      await cache.put(keyword, books);
+      await cache.put("books", books);
       await appCache.put('booksTime', DateTime.now());
 
       return books;
@@ -52,9 +52,9 @@ class BooksDataProvider {
     }
   }
 
-  static Future<List<Book>?> fetchHive(String keyword) async {
+  static Future<List<Book>?> fetchHive() async {
     try {
-      List? cachedBook = cache.get(keyword);
+      List? cachedBook = cache.get("books");
 
       if (cachedBook == null) return null;
  
