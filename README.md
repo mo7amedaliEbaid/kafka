@@ -24,7 +24,7 @@ A flutter project for the novels and quotes of [Franz_Kafka](https://en.wikipedi
         'https://www.googleapis.com/books/v1/volumes?q=inauthor:"Franz+Kafka"&maxResults=40',
       );
 ```
-- For the quotes api [Here](https://rapidapi.com/skjaldbaka17/api/quotel-quotes) the api key is required in this case you can get your key from [Rapid_Api](https://rapidapi.com/hub).
+- For the quotes api [Here](https://rapidapi.com/skjaldbaka17/api/quotel-quotes) the api key is required in this case you can get your key from [Rapid_Api](https://rapidapi.com/hub). You can change the post request body as it suits your usage.
 ```
 final response = await dio.post(
           'https://quotel-quotes.p.rapidapi.com/search',
