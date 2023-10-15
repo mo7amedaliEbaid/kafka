@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:hive/hive.dart';
+import 'package:kafka/utils/app_utils.dart';
 
 
 part 'book_model.g.dart';
@@ -69,14 +70,14 @@ class Book {
       authors: map['authors'][0],
       title: map['title'],
       description: map['description'],
-      imageLinks:"https://media.newyorker.com/photos/63b5c3eafa0ce5e2843c3416/master/w_2560%2Cc_limit/230116_r41714.jpg",
+      imageLinks:AppUtils.ErrorNetworlImage,
       publishedDate: map['publishedDate'],
     ):
       Book(
       authors: map['authors'][0],
       title: map['title'],
       description: map['description'],
-      imageLinks: map['imageLinks']["thumbnail"]?? "https://media.newyorker.com/photos/63b5c3eafa0ce5e2843c3416/master/w_2560%2Cc_limit/230116_r41714.jpg",
+      imageLinks: map['imageLinks']["thumbnail"]?? AppUtils.ErrorNetworlImage,
       publishedDate: map['publishedDate'],
     );
   }
