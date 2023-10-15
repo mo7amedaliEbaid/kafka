@@ -51,8 +51,14 @@ class TabletBookDetailScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
+                      "Date Published:",
+                      style:
+                      AppText.b1b?.copyWith(color: Colors.amber.shade900),
+                    ),
+                    Space.x!,
+                    Text(
                       book.publishedDate ?? "",
-                      style: AppText.b2b,
+                      style: AppText.b1,
                     ),
                   ],
                 ),

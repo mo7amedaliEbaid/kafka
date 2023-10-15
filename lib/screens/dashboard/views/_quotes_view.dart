@@ -11,7 +11,7 @@ class _QuotesView extends StatelessWidget {
           if (state is QuotesFetchLoading) {
             return Wrap(
               children: [
-                for (int i = 0; i < 10; i++) const _ShimmerBookCard(),
+                for (int i = 0; i < 20; i++) const _ShimmerBookCard(),
               ],
             );
           } else if (state is QuotesFetchFailed) {

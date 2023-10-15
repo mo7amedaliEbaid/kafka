@@ -21,6 +21,7 @@ class DesktopBookDetailScreen extends StatelessWidget {
             Flexible(
               flex: 4,
               child: Column(
+
                 children: [
                   Flexible(
                     flex: 3,
@@ -53,18 +54,28 @@ class DesktopBookDetailScreen extends StatelessWidget {
                 ],
               ),
             ),
-            Flexible(
-                flex: 1,
-                child: Space.xf(10)),
+
             Flexible(
               flex: 6,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Flexible(
                     flex: 3,
-                    child: Text(
-                      book.publishedDate ?? "",
-                      style: AppText.h2b,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Date Published:",
+                          style:
+                          AppText.h3b?.copyWith(color: Colors.amber.shade900),
+                        ),
+                        Space.x!,
+                        Text(
+                          book.publishedDate ?? "",
+                          style: AppText.b1b,
+                        ),
+                      ],
                     ),
                   ),
                   Flexible(

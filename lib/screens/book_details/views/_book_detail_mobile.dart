@@ -1,6 +1,5 @@
 part of '../book_details.dart';
 
-
 class MobileBookDetailScreen extends StatelessWidget {
   final Book book;
 
@@ -48,18 +47,24 @@ class MobileBookDetailScreen extends StatelessWidget {
                     }),
                 Space.y1!,
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
+                      "Date Published:",
+                      style:
+                          AppText.b1b?.copyWith(color: Colors.amber.shade900),
+                    ),
+                    Space.x!,
+                    Text(
                       book.publishedDate ?? "",
-                      style: AppText.b2b,
+                      style: AppText.b1,
                     ),
                   ],
                 ),
                 Space.y1!,
                 Text(
                   book.description ?? "",
-                  style: AppText.btn,
+                  style: AppText.b2b,
                 )
               ],
             )),

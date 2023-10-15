@@ -1,4 +1,3 @@
-
 part of '../../dashboard.dart';
 
 class _BookCard extends StatelessWidget {
@@ -37,18 +36,22 @@ class _BookCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-
             Container(
-                width: AppDimensions.normalize(85),
-                height: AppDimensions.normalize(85),
-                padding: Space.all(.7,.7),
-                decoration: BoxDecoration(
-                  color:  Colors.grey[200],
-                  borderRadius: BorderRadius.circular(
-                    AppDimensions.normalize(6),
-                  ),
+              width: AppDimensions.normalize(85),
+              height: AppDimensions.normalize(85),
+              padding: Space.all(.7, .7),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(
+                  AppDimensions.normalize(6),
                 ),
-                child: CachedNetworkImage(imageUrl: book.imageLinks!,fit: BoxFit.fill,),),
+              ),
+              child: CachedNetworkImage(
+                imageUrl: book.imageLinks ??
+                    "https://media.newyorker.com/photos/63b5c3eafa0ce5e2843c3416/master/w_2560%2Cc_limit/230116_r41714.jpg",
+                fit: BoxFit.fill,
+              ),
+            ),
             Space.y1!,
             Text(
               book.title!,

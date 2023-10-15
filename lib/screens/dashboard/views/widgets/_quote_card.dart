@@ -7,6 +7,17 @@ class _Quotes_Card extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(quote.quote!);
+    return Card(
+        elevation: 5,
+        margin: Space.all(),
+        child: Center(
+            child: Padding(
+              padding: Space.all(),
+              child: Text(
+          quote.quote!,
+          style: AppText.b1b,
+          textAlign: TextAlign.center,
+        ),
+            )));
   }
 }
