@@ -17,14 +17,15 @@ A flutter project for the novels and quotes of [Franz_Kafka](https://en.wikipedi
 - Details Screen
 - Firebase hosting
 
-## For You
+## Remarks
+- I am open to add more features , please create an issue if you have more ideas or feedback.
 - For the books api [Here](https://developers.google.com/books/docs/v1/using) It doesn't require an api key just put https://www.googleapis.com/books/v1/volumes?q=inauthor:"Franz+Kafka"&maxResults=40 in dio get method and you can change the author name or search books by any keyword.
 ```
  final response = await dio.get(
         'https://www.googleapis.com/books/v1/volumes?q=inauthor:"Franz+Kafka"&maxResults=40',
       );
 ```
-- For the quotes api [Here](https://rapidapi.com/skjaldbaka17/api/quotel-quotes) the api key is required in this case you can get your key from [Rapid_Api](https://rapidapi.com/hub).
+- For the quotes api [Here](https://rapidapi.com/skjaldbaka17/api/quotel-quotes) the api key is required in this case you can get your key from [Rapid_Api](https://rapidapi.com/hub). You can change the post request body as it suits your usage.
 ```
 final response = await dio.post(
           'https://quotel-quotes.p.rapidapi.com/search',
