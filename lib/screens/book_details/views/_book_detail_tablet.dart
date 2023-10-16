@@ -1,10 +1,10 @@
 
 part of '../book_details.dart';
 
-class TabletBookDetailScreen extends StatelessWidget {
+class _TabletBookDetailScreen extends StatelessWidget {
   final Book book;
 
-  const TabletBookDetailScreen({
+  const _TabletBookDetailScreen({
     Key? key,
     required this.book,
   }) : super(key: key);

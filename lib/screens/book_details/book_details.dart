@@ -18,13 +18,13 @@ class BookDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Responsive(
-      mobile: MobileBookDetailScreen(
+      mobile: _MobileBookDetailScreen(
         book: book,
       ),
-      tablet: TabletBookDetailScreen(
+      tablet: _TabletBookDetailScreen(
         book: book,
       ),
-      desktop: DesktopBookDetailScreen(
+      desktop: _DesktopBookDetailScreen(
         book: book,
       ),
     );

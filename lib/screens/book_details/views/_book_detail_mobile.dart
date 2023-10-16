@@ -1,9 +1,9 @@
 part of '../book_details.dart';
 
-class MobileBookDetailScreen extends StatelessWidget {
+class _MobileBookDetailScreen extends StatelessWidget {
   final Book book;
 
-  const MobileBookDetailScreen({
+  const _MobileBookDetailScreen({
     Key? key,
     required this.book,
   }) : super(key: key);

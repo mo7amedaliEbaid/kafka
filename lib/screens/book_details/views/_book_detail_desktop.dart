@@ -1,9 +1,9 @@
 part of '../book_details.dart';
 
-class DesktopBookDetailScreen extends StatelessWidget {
+class _DesktopBookDetailScreen extends StatelessWidget {
   final Book book;
 
-  const DesktopBookDetailScreen({
+  const _DesktopBookDetailScreen({
     Key? key,
     required this.book,
   }) : super(key: key);
