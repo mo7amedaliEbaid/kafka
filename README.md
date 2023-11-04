@@ -1,6 +1,6 @@
 # kafka
 
-A flutter project for the novels and quotes of [Franz_Kafka](https://en.wikipedia.org/wiki/Franz_Kafka)
+A flutter Multi Platform project for the novels and quotes of [Franz_Kafka](https://en.wikipedia.org/wiki/Franz_Kafka)
 
 - Multi Platform (Mobile, Tablet, Web, Desktop "Linux" )
 - Multiple themes
@@ -93,8 +93,8 @@ creating quote_model.g.dart
 #### Linux
 
 <p float="left">
-   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/web/books_dark.png" width="670" />
-   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/web/quotes.png" width="670" />
-   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/web/quotes_dark.png" width="670" />
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/eccc8d78d43795d9d536bdd6801d9312c11433b9/screenshots/linux/details_linux.png" width="670" />
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/eccc8d78d43795d9d536bdd6801d9312c11433b9/screenshots/linux/quotes_linux.png" width="670" />
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/eccc8d78d43795d9d536bdd6801d9312c11433b9/screenshots/linux/dash_linux.png" width="670" />
 </p>
 
