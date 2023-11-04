@@ -2,7 +2,7 @@
 
 A flutter project for the novels and quotes of [Franz_Kafka](https://en.wikipedia.org/wiki/Franz_Kafka)
 
-- Multi Platform (Mobile, Tablet, Web)
+- Multi Platform (Mobile, Tablet, Web, Desktop "Linux" )
 - Multiple themes
 - Responsive Design
 - Clean Architecture
@@ -18,7 +18,6 @@ A flutter project for the novels and quotes of [Franz_Kafka](https://en.wikipedi
 - Firebase hosting
 
 ## Remarks
-- I am open to add more features , please create an issue if you have more ideas or feedback.
 - For the books api [Here](https://developers.google.com/books/docs/v1/using) It doesn't require an api key just put https://www.googleapis.com/books/v1/volumes?q=inauthor:"Franz+Kafka"&maxResults=40 in dio get method and you can change the author name or search books by any keyword.
 ```
  final response = await dio.get(
@@ -72,7 +71,7 @@ creating quote_model.g.dart
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/g_models/g_quote_model.png" width="670" />
 </p>
 
-mobile 
+#### mobile 
 
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/mobile/books.jpg" width="270" />
@@ -82,7 +81,7 @@ mobile
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/mobile/quotes_dark.jpg" width="270" />
 </p>
 
-web
+#### web
 
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/web/books.png" width="670" />
@@ -90,3 +89,12 @@ web
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/web/quotes.png" width="670" />
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/web/quotes_dark.png" width="670" />
 </p>
+
+#### Linux
+
+<p float="left">
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/web/books_dark.png" width="670" />
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/web/quotes.png" width="670" />
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/web/quotes_dark.png" width="670" />
+</p>
+

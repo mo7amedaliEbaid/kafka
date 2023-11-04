@@ -12,6 +12,15 @@ class _DesktopBookDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     App.init(context);
     return Scaffold(
+      appBar: TargetPlatform.linux == true ? AppBar(
+        elevation: 0,
+        leading: GestureDetector(
+          onTap:()=> Navigator.pop(context),
+          child: Icon(Icons.arrow_back,size: AppDimensions.normalize(20),),
+        ),
+      ) : AppBar(
+        elevation: 0,
+      ),
       body: Padding(
         padding: Space.vf(3),
         child: Row(
@@ -21,7 +30,6 @@ class _DesktopBookDetailScreen extends StatelessWidget {
             Flexible(
               flex: 4,
               child: Column(
-
                 children: [
                   Flexible(
                     flex: 3,
@@ -30,10 +38,7 @@ class _DesktopBookDetailScreen extends StatelessWidget {
                       style: AppText.h2b,
                     ),
                   ),
-                  Flexible(
-                      flex: 2,
-                      child: Space.y2!),
-
+                  Flexible(flex: 2, child: Space.y2!),
                   Flexible(
                     flex: 20,
                     child: CachedNetworkImage(
@@ -54,7 +59,6 @@ class _DesktopBookDetailScreen extends StatelessWidget {
                 ],
               ),
             ),
-
             Flexible(
               flex: 6,
               child: Column(
@@ -67,8 +71,8 @@ class _DesktopBookDetailScreen extends StatelessWidget {
                       children: [
                         Text(
                           "Date Published:",
-                          style:
-                          AppText.h3b?.copyWith(color: Colors.amber.shade900),
+                          style: AppText.h3b
+                              ?.copyWith(color: Colors.amber.shade900),
                         ),
                         Space.x!,
                         Text(
@@ -78,9 +82,7 @@ class _DesktopBookDetailScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Flexible(
-                      flex: 2,
-                      child: Space.y1!),
+                  Flexible(flex: 2, child: Space.y1!),
                   Flexible(
                     flex: 20,
                     child: SizedBox(

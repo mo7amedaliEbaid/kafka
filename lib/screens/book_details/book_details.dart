@@ -1,7 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:kafka/responsive/responsive.dart';
-
 import '../../configs/app.dart';
 import '../../configs/configs.dart';
 import '../../models/book/book_model.dart';
