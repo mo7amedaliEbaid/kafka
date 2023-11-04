@@ -47,7 +47,7 @@ final response = await dio.post(
 - for testing your web release you can use firebase hosting it's free.
 
 ## Web Demo
-Visit Website from here  [Web_Demo](https://e-branch-804fb.web.app/#/dashboard)
+Visit Website from here  [Web_Demo](https://e-branch-804fb.web.app/)
 
 ## Download Apk
 <a href="https://github.com/mo7amedaliEbaid/kafka/releases/download/v1.0.0/kafka.apk"><img src="https://playerzon.com/asset/download.png" width="120"></img></a>
