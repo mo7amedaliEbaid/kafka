@@ -59,20 +59,20 @@ Visit Website from here  [Web_Demo](https://e-branch-804fb.web.app/#/dashboard)
 Fore more screen shots [Here](https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots)
 
 
-##### creating book_model.g.dart
+#### creating book_model.g.dart
 
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/g_models/g_book_model.png" width="670" />
 </p>
 
-##### creating quote_model.g.dart
+#### creating quote_model.g.dart
 
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/g_models/g_quote_model.png" width="670" />
 </p>
 
 
-##### Widget Tree.
+#### Widget Tree.
 
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4683b58311f53c1bd9511868aa7f990d966eb58b/screenshots/inspector/inspector.png" width="670" />
@@ -80,7 +80,7 @@ Fore more screen shots [Here](https://github.com/mo7amedaliEbaid/kafka/blob/4f27
 
 ### mobile 
 
-##### Portrait.
+#### Portrait.
 
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/mobile/books.jpg" width="270" />
@@ -90,7 +90,7 @@ Fore more screen shots [Here](https://github.com/mo7amedaliEbaid/kafka/blob/4f27
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/mobile/quotes_dark.jpg" width="270" />
 </p>
 
-##### Landscape.
+#### Landscape.
 
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/c061bb305df387fd6865493f804b0bc85ee92a73/screenshots/landscape/land_dark.jpg" width="470" />
@@ -98,7 +98,7 @@ Fore more screen shots [Here](https://github.com/mo7amedaliEbaid/kafka/blob/4f27
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/c061bb305df387fd6865493f804b0bc85ee92a73/screenshots/landscape/landscape_details.jpg" width="470" />
 </p>
 
-### Linux
+## Linux
 
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/eccc8d78d43795d9d536bdd6801d9312c11433b9/screenshots/linux/details_linux.png" width="670" />
@@ -106,7 +106,7 @@ Fore more screen shots [Here](https://github.com/mo7amedaliEbaid/kafka/blob/4f27
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/eccc8d78d43795d9d536bdd6801d9312c11433b9/screenshots/linux/dash_linux.png" width="670" />
 </p>
 
-### web
+## web
 
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/web/books.png" width="670" />
