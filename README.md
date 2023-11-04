@@ -4,7 +4,7 @@ A flutter Multi Platform project for the novels and quotes of [Franz_Kafka](http
 
 - Multi Platform (Mobile, Tablet, Web, Desktop "Linux" )
 - Multiple themes
-- Responsive Design
+- Responsive Design (Portrait, Landscape, Tablet, Desktop)
 - Clean Architecture
 - Books Api => Dio
 - Quotes Api => Dio
