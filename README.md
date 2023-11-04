@@ -80,12 +80,22 @@ Fore more screen shots [Here](https://github.com/mo7amedaliEbaid/kafka/blob/4f27
 
 #### mobile 
 
+##### Portrait.
+
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/mobile/books.jpg" width="270" />
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/mobile/books_dark.jpg" width="270" />
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/mobile/details.jpg" width="270" />
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/mobile/quotes.jpg" width="270" />
    <img src="https://github.com/mo7amedaliEbaid/kafka/blob/4f278889f1c58f663ce8c4021d4df28c35986157/screenshots/mobile/quotes_dark.jpg" width="270" />
+</p>
+
+##### Landscape.
+
+<p float="left">
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/c061bb305df387fd6865493f804b0bc85ee92a73/screenshots/landscape/land_dark.jpg" width="470" />
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/c061bb305df387fd6865493f804b0bc85ee92a73/screenshots/landscape/land_quotes.jpg" width="470" />
+   <img src="https://github.com/mo7amedaliEbaid/kafka/blob/c061bb305df387fd6865493f804b0bc85ee92a73/screenshots/landscape/landscape_details.jpg" width="470" />
 </p>
 
 #### web
