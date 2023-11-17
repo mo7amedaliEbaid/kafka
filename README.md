@@ -2,7 +2,7 @@
 
 A flutter Multi Platform project for the novels and quotes of [Franz_Kafka](https://en.wikipedia.org/wiki/Franz_Kafka)
 
-- Multi Platform (Mobile, Tablet, Web, Desktop "Linux" )
+- Multi Platform (Mobile `Android`,`Ios`, Tablet, Web, Desktop `Linux` .
 - Multiple themes
 - Responsive Design (Portrait, Landscape, Tablet, Desktop)
 - Clean Architecture
@@ -19,13 +19,13 @@ A flutter Multi Platform project for the novels and quotes of [Franz_Kafka](http
 
 ## Remarks
 - For the books api [Here](https://developers.google.com/books/docs/v1/using) It doesn't require an api key just put https://www.googleapis.com/books/v1/volumes?q=inauthor:"Franz+Kafka"&maxResults=40 in dio get method and you can change the author name or search books by any keyword.
-```
+```dart
  final response = await dio.get(
         'https://www.googleapis.com/books/v1/volumes?q=inauthor:"Franz+Kafka"&maxResults=40',
       );
 ```
-- For the quotes api [Here](https://rapidapi.com/skjaldbaka17/api/quotel-quotes) the api key is required in this case you can get your key from [Rapid_Api](https://rapidapi.com/hub). You can change the post request body as it suits your usage.
-```
+- For the quotes api [Here](https://rapidapi.com/skjaldbaka17/api/quotel-quotes) the `api key` is required in this case you can get your key from [Rapid_Api](https://rapidapi.com/hub). You can change the post request body as it suits your usage.
+```dart
 final response = await dio.post(
           'https://quotel-quotes.p.rapidapi.com/search',
           data: {
