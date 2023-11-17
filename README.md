@@ -2,7 +2,7 @@
 
 A flutter Multi Platform project for the novels and quotes of [Franz_Kafka](https://en.wikipedia.org/wiki/Franz_Kafka)
 
-- Multi Platform (Mobile `Android`,`Ios`, Tablet, Web, Desktop `Linux` .
+- Multi Platform (Mobile `Android`,`Ios`, Tablet, Web, Desktop `Linux`)
 - Multiple themes
 - Responsive Design (Portrait, Landscape, Tablet, Desktop)
 - Clean Architecture
